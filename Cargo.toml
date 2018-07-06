@@ -1,0 +1,14 @@
+[package]
+name = "divans-wasm"
+version = "0.1.0"
+authors = ["LongYinan <lynweklm@gmail.com>"]
+description = "https://github.com/dropbox/divans wasm version"
+license = "MIT"
+repository = ""
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+divans = { version = "*", features = ["simd"] }
+wasm-bindgen = "0.2"
